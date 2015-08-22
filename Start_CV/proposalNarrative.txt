@@ -1,0 +1,37 @@
+Proposal Narrative: Project Heimdall
+From Yi Lu, Jonathan . G. Tao, and Hengjiu Kang
+Introduction: Background
+Nowadays more and more companies are focusing on IOT and VR technology, the brief of Virtual-Reality. By using VR devices like headset display, we can not only see the real world, but also see the projection of virtual objects on our views. This fancy scenario really requires a positioning system, put both real world things and virtual world objects under a same coordinate system. We do have a large-scale geometry positioning system known as GPS, but this system only serve limited precision both on time and position to normal users, and GPS signal can be easily blocked by buildings and structures. As for in-door positioning system, though there does not have a sophisticated product on the market, many methods have been developed and already in researching. 
+What we need, is mid-scale positioning system, especially serving for public in open space like street, park or plaza, filling the gap between a single room and the earth.
+
+Introduction: Idea of design
+The concept is simple: Multiple GPS satellites broadcast RF signals to land, and a GPS receiver can solve its position by calculate difference in time between receiving each RF signal. Our system also attributed by multiple signal sources, the , but we use laser beam instead. Laser has the best directivity, which means that we can reflect a laser beam to a direction with extreme high precision as we want, so it gives us every high precision without differential GPS stations or longer positioning time cost. We will set up a relative coordinate system by laser broadcasting, then map this relative coordinate to global system. In each laser beam ¡°satellite¡±, a micro laser galvanometer is used to broadcast laser beam to every direction in tapered pattern, and during this process, laser beam will be modulated in all the information that we need to solve position, including bending angle, time, satellite ID, etc.
+By setting up several ¡°satellites¡± on the roof, or in the lamps, laser beam will be blocked at the least possibility. 
+
+Business: Potential market
+This product might not directly face to consumer market, because this system highly dependent on other VR devices or tracking devices. Just like GPS satellites, we are designing those satellites and background support, but not the navigation device that you may have in your car. The best outgoing for this product is setting up a standard: if you wanna a fast and high quality mid-scale positioning service, your product should be compatible with us.
+However, for business, especially for IOT, it can be very valuable in many situations, including products tracking in assembly line, and in high precision 3D virtual modeling: wearing a Full HD headset display, entering in studio room, turning on Heimdall system, then you can see 3D models in the air with sub-millimeter level precision.
+
+Business: Value proposition
+VR is one of the hotest starts in the Bay: Facebook costs $2 billion buy a starter VR headset company Oculus Rift, and Google glass has been focused on over many years. Also Microsoft has released its cutting-edge product, Hololens, looking for a next generation of perspective to this world. Our positioning system is directly serving those products.
+Business: Business model
+Positioning system can be used in various markets. Let¡¯s say mainly about business consumer and personal consumer.
+For business consumers like conference room, shop and market, this positioning system can be used to offer 3D gallery service to customers, then customers who wear headset display can see details about products from any angle, and can even see how¡¯s this product works in various situation.
+Also for business costumers like Courier company and factory, they can use positioning system with micro receivers to track every parts¡¯ positions, which fits more random situations.
+For those personal customers, this positioning system can be a fundamental equipment for a smart family, because it offers positioning service for home robot, Hololens, and more. 
+For academic customer and artist, this positioning system gives them fantastic precision to modeling, and aids to put devices on the correct position.
+Team: Expertise and skills
+Yi Lu: Major in Electrical engineering and Computer Engineering, has 4 years experience on iOS app developing, 2 years on Server, network and general software developing, and 1 year on embedded system developing. He has an iOS app in Apple Store, and he has experience in some critical embedded systems.
+Jonathan Tao: Major in electrical engineering and computer engineering. He has spent two years working on embedded electronics systems, which include electric vehicle management electronics and embedded graphics user interface. He also has experience developing desktop applications, which 6include games and scientific simulations.
+Hengjiu Kang is Electrical Engineering with broaden experience in electrical engineering region, including circuit board design, embedded system, analog design, FPGA, signal processing, sensors, local network. He has worked on Freescale cup, Battery management system on Formula SAE competition, a multi-node wireless data-logger, and an electronic ball project, which just been sent to Maker Faire. Also because he changed major from computer science to electrical engineering now, he is also good at C/C++ programming, matlab, even opencv/opengl, which will be very helpful.
+
+Project: Expected outcome and usage of funds
+We already have very clear design concept, and every part is clear to go, so our expected time schedule is:
+During the first quarter, we will finish the prototype of laser based transmitting pairs, which should have high SNR and high speed rate.
+During the second quarter, we will combine laser source and laser galvanometer together, then make it possible to construct laser communication connection in a room, and modulate some information in the laser beam. Also at the same time, we will start on software design, including a well designed debugging software set and a general positioning client.
+Then we are ready/able to goto maker fair or picnic day or other showcase activity.
+During the third quarter, our job will change to possibility extending, like design some specific using environment and situation to show that how our system will work. Also we need to write a very simple app on the phone, showing that we are ready to push the whole system to a more sophisticated stage.
+
+This is big and complex project, so we will use most of funds on buying necessary develop boards and components, including laser sources, Laser galvanometers, controller boards, PCB board fabrication, Apple developer license(if we have to work on Mobile app), and etc.
+
+
